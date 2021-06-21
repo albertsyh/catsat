@@ -1,38 +1,159 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+  color: #143154;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+
+header{
+  margin-top: 40px;
+}
+
+header h4{
+  font-weight: normal;
+}
+
+.category{
+  width: 140px;
+  height: 36px;
+  border-radius: 44px;
+  border: 0;
+  font-size: 14px;
+  color: #143154;
+  font-weight: bold;
+}
+
+.cats{
+  min-height: 230px;
+  max-height: 230px;
+  border: 1px solid #F4F4F0;
+  border-radius: 16px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.cats img{
+  object-fit:cover;
+  height: 140px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+.catThumbnail{
+  height: 140px;
+  width: 100%;
+  background-size: cover;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.cats button{
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: 0;
+  background-color: #fff;
+}
+
+.cats p{
+  font-size: 12px;
+}
+
+.catInfo{
+  margin-top: 10px;
+}
+
+.catsDetails{
+  padding: 12px 0;
+}
+
+.liked{
+  background-color: #F46D5C !important;
+}
+
+.monster{
+  padding: 250px 0;
   text-align: center;
+  color: #B3BDD2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.monster h5{
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.active{
+  background-color: #143154;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.catDetails .catThumbnail{
+  height: 350px;
+  border-radius: 0;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.catDetails .catThumbnail button{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }
+
+.catDetails button{
+  width: 112px;
+  border: 0;
+  border-radius: 44px;
+  background-color: #fff;
+}
+
+.catDetails * h6{
+  font-style: normal;
+}
+
+button .liked{
+  color: white;
+}
+
+.likedHeart{
+  color: white !important;
+}
+
+.ownerDetails{
+  background-color: white;
+  border-radius: 16px;
+}
+
+.ownerDetails * td{
+  color: #7B9ABF;
+}
+
+.moreContainer{
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.loaderPage{
+  height: 100vh;
+  background-color: #F8EFE6;
+}
+
+.loaderPage img{
+  height: 120px;
+  width: 120px;
+}
+
+.loaderPage * h1{
+  color:#A88E74;
+}
+
