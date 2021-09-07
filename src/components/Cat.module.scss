@@ -1,0 +1,40 @@
+@import "../colors.scss";
+
+.cats {
+  // min-height: 230px;
+  // max-height: 230px;
+  height: 230px; // may as well just fix the height since the min and max is the same.
+  border: 1px solid $light-yellow;
+  border-radius: 16px;
+  margin: 10px 0;
+  padding: 0;
+
+  img {
+    object-fit: cover;
+    height: 140px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+  }
+
+  button {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 0;
+    background-color: #fff;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.catThumbnail {
+  height: 140px;
+  width: 100%;
+  background-size: cover;
+  margin: 0px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
